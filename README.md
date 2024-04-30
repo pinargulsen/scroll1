@@ -65,15 +65,19 @@ python main.py
 
 19. RubyScore Vote
 
-20. Create Gnosis Safe
+20. SecondLive Sign In
 
-21. Deploy any contract
+21. Owlto Daily CheckIn
 
-22. Custom routes - actions to be performed sequentially or randomly
+22. Create Gnosis Safe
 
-23. Check gas before starting the module, if gas > specified, the software will wait for
+23. Deploy any contract
 
-24. Logging via logger module
+24. Custom routes - actions to be performed sequentially or randomly
+
+25. Check gas before starting the module, if gas > specified, the software will wait for
+
+26. Logging via logger module
 
 ---
 <h2>⚙️ Settings</h2>
