@@ -710,5 +710,10 @@ async def secondlive_signin(account_id, key, recipient):
     await secondlive.sign_in()
 
 
+async def owlto_checkin(account_id, key, recipient):
+    owlto = Owlto(account_id, key, recipient)
+    await owlto.check_in()
+
+
 def get_tx_count():
     asyncio.run(check_tx())
