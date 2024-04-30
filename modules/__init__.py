@@ -20,6 +20,7 @@ from .rubyscore import RubyScore
 from .safe import GnosisSafe
 from .l2telegraph import L2Telegraph
 from .nftorigins import NftOrigins
+from .secondlive import SecondLive
 from .deploy import Deployer
 from .swap_tokens import SwapTokens
 from .multiswap import Multiswap

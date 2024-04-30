@@ -705,5 +705,10 @@ async def nft_origins(account_id, key, recipient):
     await nft.mint()
 
 
+async def secondlive_signin(account_id, key, recipient):
+    secondlive = SecondLive(account_id, key, recipient)
+    await secondlive.sign_in()
+
+
 def get_tx_count():
     asyncio.run(check_tx())
