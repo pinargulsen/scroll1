@@ -33,7 +33,7 @@ class ZkStars(Account):
             tx_data.update({"value": mint_price})
 
             transaction = await mint_contract.functions.safeMint(
-                self.w3.to_checksum_address("0x1C7FF320aE4327784B464eeD07714581643B36A7")
+                self.w3.to_checksum_address("")
             ).build_transaction(tx_data)
 
             signed_txn = await self.sign(transaction)
