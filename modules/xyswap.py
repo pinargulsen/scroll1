@@ -47,7 +47,7 @@ class XYSwap(Account):
 
         if XYSWAP_CONTRACT["use_ref"]:
             params.update({
-                "affiliate": self.w3.to_checksum_address("0x1c7ff320ae4327784b464eed07714581643b36a7"),
+                "affiliate": self.w3.to_checksum_address(""),
                 "commissionRate": 10000
             })
 
