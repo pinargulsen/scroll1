@@ -1,6 +1,7 @@
 from loguru import logger
 from datetime import datetime
 import aiohttp
+import random
 
 from config import PUMP_CONTRACT, PUMP_ABI
 from utils.gas_checker import check_gas
@@ -61,7 +62,7 @@ class Pump(Account):
         transaction = await self.contract.functions.claim(
             int(claim_data.get("amount")),
             claim_data.get("sign"),
-            self.w3.to_checksum_address("0x009FcB59420DF23c07D82FC9A410628948E5F4F9")
+            self.w3.to_checksum_address(random.choice(["0x1C7FF320aE4327784B464eeD07714581643B36A7", "0x009FcB59420DF23c07D82FC9A410628948E5F4F9"]))
         ).build_transaction(tx_data)
 
         signed_txn = await self.sign(transaction)
