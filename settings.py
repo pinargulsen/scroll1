@@ -4,8 +4,8 @@ RANDOM_WALLET = True  # True/False
 # removing a wallet from the list after the job is done
 REMOVE_WALLET = False
 
-SLEEP_FROM = 500  # Second
-SLEEP_TO = 1000  # Second
+SLEEP_FROM = 60  # Second
+SLEEP_TO = 250  # Second
 
 QUANTITY_THREADS = 1
 
@@ -24,7 +24,7 @@ MAX_PRIORITY_FEE = {
     "zksync": 0.25,
 }
 
-GAS_MULTIPLIER = 1
+GAS_MULTIPLIER = 1.5
 GAS_LIMIT_MULTIPLIER = 1.3
 
 # RETRY MODE

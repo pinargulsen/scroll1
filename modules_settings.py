@@ -647,13 +647,11 @@ async def custom_routes(account_id, key, recipient):
     """
 
     use_modules = [
-        create_omnisea,
-        [create_omnisea, mint_zerius, None],
-        (create_omnisea, 1, 3),
+        [send_mail, owlto_checkin, secondlive_signin, rubyscore_vote, mi]
     ]
 
-    sleep_from = 300
-    sleep_to = 700
+    sleep_from = 1
+    sleep_to = 2
 
     random_module = True
 
@@ -673,6 +671,11 @@ async def withdraw_layerbank(account_id, key, recipient):
 async def withdraw_aave(account_id, key, recipient):
     aave = Aave(account_id, key, recipient)
     await aave.withdraw()
+
+
+async def pump_claim(account_id, key, recipient):
+    module = Pump(account_id, key, recipient)
+    await module.claim()
 
 
 async def send_mail(account_id, key, recipient):

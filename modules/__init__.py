@@ -27,5 +27,6 @@ from .swap_tokens import SwapTokens
 from .multiswap import Multiswap
 from .multibridge import Multibridge
 from .routes import Routes
+from .pump import Pump
 from .transfer import Transfer
 from .tx_checker import check_tx

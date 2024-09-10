@@ -93,6 +93,9 @@ with open("data/abi/secondlive/abi.json", "r") as file:
 with open("data/abi/owlto/abi.json", "r") as file:
     OWLTO_ABI = json.load(file)
 
+with open("data/abi/pump/abi.json", "r") as file:
+    PUMP_ABI = json.load(file)
+
 ZERO_ADDRESS = "0x0000000000000000000000000000000000000000"
 
 BRIDGE_CONTRACTS = {
@@ -159,3 +162,5 @@ NFT_ORIGINS_CONTRACT = "0x74670A3998d9d6622E32D0847fF5977c37E0eC91"
 SECONDLIVE_CONTRACT = "0xAC1f9Fadc33cC0799Cf7e3051E5f6b28C98966EE"
 
 OWLTO_CONTRACT = "0xE6FEcA764B7548127672C189D303eb956c3Ba372"
+
+PUMP_CONTRACT = "0xCe64dA1992Cc2409E0f0CdCAAd64f8dd2dBe0093"
