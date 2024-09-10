@@ -50,7 +50,7 @@
   },
   "scroll": {
     "rpc": [
-      "https://rpc.scroll.io"
+      "https://rpc.ankr.com/scroll"
     ],
     "explorer": "https://scrollscan.com/tx/",
     "token": "ETH"

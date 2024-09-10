@@ -43,7 +43,7 @@ class Account:
         }
 
         if gas_price:
-            tx.update({"gasPrice": await self.w3.eth.gas_price})
+            tx.update({"gasPrice": int(float((await self.w3.eth.gas_price)) * 1.5)})
 
         return tx
 
